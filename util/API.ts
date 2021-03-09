@@ -10,6 +10,9 @@ export default {
 
     getPosts() {
         axios.get('/api/posts/get')
-            .then(res => res.data)
+            .then(res => {
+                return ['asdf', 'jkl']
+                return res.data;
+            })
     }
 }

@@ -1,13 +1,20 @@
 import Head from 'next/head';
 import styles from '../styles/Home.module.css'
-import PostForm from '../components/PostForm/PostForm';
 import { useState, useEffect } from 'react';
 import API from '../util/API';
+import PostForm from '../components/PostForm/PostForm';
+import Post from '../components/Post/Post';
 
 export default function Home() {
-  const handleasdf = () => {
-    API.getPosts();
-  }
+
+  const [posts, setPosts] = useState([]);
+
+  useEffect(() => {
+    const result = API.getPosts();
+    setPosts(result);
+    console.log(result);
+  }, [])
+
   return (
     <div className={styles.container}>
       <Head>
@@ -20,6 +27,12 @@ export default function Home() {
       <h1 className={styles.logo}>Lrg</h1>
 
       <PostForm />
+
+      <p onClick={() => console.log(posts)}>asdf</p>
+
+      {/* {posts.map(post => {
+        <Post />
+      })} */}
 
     </div>
   )
