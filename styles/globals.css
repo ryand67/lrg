@@ -1,3 +1,7 @@
+:root {
+  --main-accent: rgb(58, 58, 58);
+}
+
 html,
 body {
   padding: 0;
