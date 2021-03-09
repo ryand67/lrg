@@ -22,7 +22,7 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx"
-, "components/PostForm.ts"  ],
+, "components/PostForm.ts", "pages/_app.js"  ],
   "exclude": [
     "node_modules"
   ]

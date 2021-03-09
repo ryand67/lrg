@@ -3,7 +3,7 @@ export default class Post {
     byLine;
     tags;
     createdOn;
-    constructor(content: string, byLine: string, tags: Array<String>) {
+    constructor(content: string, byLine: string, tags) {
         this.content = content;
         this.byLine = byLine;
         this.tags = tags;
