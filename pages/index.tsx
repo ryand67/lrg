@@ -1,6 +1,7 @@
-import Head from 'next/head'
+import Head from 'next/head';
 import styles from '../styles/Home.module.css'
-import PostForm from '../components/PostForm';
+import PostForm from '../components/PostForm/PostForm';
+import { useState, useEffect } from 'react';
 
 export default function Home() {
   return (
@@ -13,7 +14,9 @@ export default function Home() {
       </Head>
 
       <h1 className={styles.logo}>Lrg</h1>
+
       <PostForm />
+
     </div>
   )
 }

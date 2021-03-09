@@ -1,0 +1,28 @@
+.postForm {
+    margin-top: 2em;
+    display: flex;
+    flex-direction: column;
+}
+
+.postForm label {
+    margin: .5em 0;
+}
+
+.postForm input,
+.postForm textarea {
+    padding: .25em;
+}
+
+.postForm textarea,
+.postForm input,
+.postForm button {
+    background-color: transparent;
+    border: 1px solid var(--main-accent);
+}
+
+.submitBtn {
+    margin: 0 auto;
+    margin-top: 1em;
+    width: 50%;
+    padding: 1em 0;
+}
